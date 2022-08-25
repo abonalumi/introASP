@@ -1,0 +1,11 @@
+﻿@model List<Beer>
+
+<h1>Cervezas</h1>
+<ul>
+    @foreach (var beer in Model)
+    {
+        <li>
+            @Html.DisplayFor(m => beer.Name) - @Html.DisplayFor(m => beer.Brand.Name)
+        </li>
+    }
+</ul>
