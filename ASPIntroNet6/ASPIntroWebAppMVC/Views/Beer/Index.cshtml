@@ -1,6 +1,11 @@
 ﻿@model List<Beer>
 
 <h1>Cervezas</h1>
+
+<p>
+    <a asp-action="Create">Nueva cerveza</a>
+</p>
+
 <ul>
     @foreach (var beer in Model)
     {
